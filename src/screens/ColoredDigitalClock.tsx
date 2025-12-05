@@ -1,31 +1,31 @@
 import { useEffect, useState } from "react";
-import { Dimensions, Modal, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Dimensions, Pressable, StyleSheet, View, Text } from "react-native";
 import RadialGradient from "react-native-radial-gradient";
-import Svg, { Text as SvgText, Defs } from "react-native-svg";
-import { FigtreeFont } from "../shared/constants/figtree-font";
+import Svg, { Text as SvgText, Defs, TSpan, } from "react-native-svg";
+import { FigtreeFont } from "../shared/constants/font";
 import { ColorPalette } from "../shared/constants/color";
+import SharedModal from "../shared/SharedModal";
+import ColorPaletteItem from "../components/ColorPaletteItem";
 
-const { width } = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 export default function ColoredDigitalClock() {
 
     const [showPalette, setShowPalette] = useState(false);
     const [selectedColors, setSelectedColors] = useState(ColorPalette.sky);
 
-    const now = new Date();
-    const [hour, setHour] = useState(now.getHours().toString().padStart(2, '0'));
-    const [minute, setMinute] = useState(now.getMinutes().toString().padStart(2, '0'));
+    const [time, setTime] = useState(new Date());
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const now = new Date();
-            setHour(now.getHours().toString().padStart(2, '0'));
-            setMinute(now.getMinutes().toString().padStart(2, '0'));
+            setTime(new Date())
         }, 1000);
         return () => clearInterval(interval);
 
     }, []);
 
+    const hour = time.getHours().toString().padStart(2, '0');
+    const minute = time.getMinutes().toString().padStart(2, '0');
 
     return (
         <View style={styles.container}>
@@ -33,16 +33,23 @@ export default function ColoredDigitalClock() {
                 onLongPress={() => setShowPalette(!showPalette)}>
                 {/* <Defs> */}
                 <RadialGradient style={styles.background}
-                    colors={[selectedColors[0], selectedColors[1], 'black']}
+                    colors={[selectedColors[0], selectedColors[1], '#00000000']}
                     stops={[0.01, 0.05, 0.7]}
                     center={[width - 200, 50]}
                     radius={700}>
-                    <Svg style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}  >
+                    {/* <View style={{flex:1, backgroundColor:'red'}}> */}
+
+                    <Svg
+
+                        width={width}
+                        height={height}
+                    >
                         <SvgText
-                            x="50%"
-                            y="55%"
+                            x={width / 2}
+                            y={height / 2}
+
                             textAnchor="middle"
-                            alignmentBaseline="middle"
+                            alignmentBaseline="central"
                             fontSize="280"
                             stroke={selectedColors[2]}
                             strokeWidth="2"
@@ -51,38 +58,37 @@ export default function ColoredDigitalClock() {
                             fontFamily={FigtreeFont.bold}
                             letterSpacing="-12"
 
-                        >
-                            {hour + ':' + minute}
+                        >{hour + ':' + minute}
+
+                            {/* 
+                            <TSpan >{hour}</TSpan>
+                            <TSpan dx={-50} transform={[{ translateY: -height * 0.05 }]}>&#58;</TSpan>
+                            <TSpan >{minute}</TSpan> */}
                         </SvgText>
                     </Svg>
-
-
-
+                    {/* <View style={styles.textContainer}>
+                        <Text style={[styles.largeText, { color: selectedColors[2], textShadowColor: selectedColors[3] }]}>{hour}</Text>
+                        <Text style={[styles.largeText, { transform: [{ translateY: '-10%' }], marginHorizontal: '-3%' }]}>:</Text>
+                        <Text style={styles.largeText}>{minute}</Text>
+                    </View> */}
+                    {/* </View> */}
                 </RadialGradient>
                 {/* </Defs> */}
 
-                <Modal visible={showPalette} transparent animationType={'slide'} onMagicTap={() => setShowPalette(false)}>
-                    <View style={styles.modalOverlay}>
+                <SharedModal visible={showPalette} title="Colors" onClose={() => setShowPalette(false)}>
+                    {Object.entries(ColorPalette).map((colorSet, index) => (
+                        <ColorPaletteItem
+                            key={index}
+                            isSelected={colorSet[1] === selectedColors}
+                            color1={colorSet[1][1]}
+                            color2={colorSet[1][2]}
+                            onPress={() => {
+                                setSelectedColors(colorSet[1]);
+                                setShowPalette(false)
+                            }} />
 
-                        <ScrollView style={styles.paletteBox} bounces={true} horizontal showsHorizontalScrollIndicator={false}>
-                            {Object.entries(ColorPalette).map((colorSet, index) => (
-                                <Pressable key={index} style={[styles.paletteItem, index === Object.entries(ColorPalette).length - 1 && { marginEnd: 110 }]}
-                                    onPress={() => {
-                                        setSelectedColors(colorSet[1]);
-                                        setShowPalette(false);
-                                    }}>
-
-                                    <View style={[styles.container, { backgroundColor: colorSet[1][1] }]} />
-                                    <View style={[styles.container, { backgroundColor: colorSet[1][2] }]} />
-                                </Pressable>
-                            ))}
-                        </ScrollView>
-                        <Pressable style={styles.paletteCloseButton}
-                            onPress={() => setShowPalette(false)}>
-                            <Text style={{ color: 'white', fontSize: 22 }}>&times;</Text>
-                        </Pressable>
-                    </View>
-                </Modal>
+                    ))}
+                </SharedModal>
             </Pressable>
         </View>
     );
@@ -91,10 +97,8 @@ export default function ColoredDigitalClock() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        // backgroundColor:'blue'
-        // alignItems: 'center',
         // justifyContent: 'center',
-        // backgroundColor: 'black',
+        // alignItems: 'center',
     },
     background: {
         flex: 1,
@@ -103,44 +107,21 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-
-    modalOverlay: {
-        position: 'absolute',
-        bottom: 0,
-        width: '100%',
-        height: 80,
-        paddingBottom: 8,
-        // paddingHorizontal: 16,
-        backgroundColor: '#00000055',
-    },
-
-    paletteBox: {
-        // flexDirection: 'row',
-        padding: 16,
-        paddingEnd: 64,
-        height: '100%',
-        width: '100%',
-        // direction: 'rtl',
-    },
-
-    paletteItem: {
+    textContainer: {
+        flex: 1,
         flexDirection: 'row',
-        height: 40,
-        width: 40,
-        borderRadius: 20,
-        marginHorizontal: 8,
-        overflow: 'hidden',
-    },
-
-    paletteCloseButton: {
-        position: 'absolute',
-        top: 16,
-        right: 32,
-        backgroundColor: '#444444aa',
-        borderRadius: 20,
-        width: 40,
-        height: 40,
-        alignItems: 'center',
         justifyContent: 'center',
+        alignItems: 'center'
+    },
+    largeText: {
+        fontSize: 280,
+        padding: 16,
+        color: '#eee',
+        textAlign: 'center',
+        fontFamily: FigtreeFont.bold,
+        letterSpacing: -10,
+        textShadowOffset: { width: 1, height: 1 },
+        textShadowRadius: 5,
     }
+
 })

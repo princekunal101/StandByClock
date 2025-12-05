@@ -25,6 +25,14 @@
 		33CC011046324B659246A7F9 /* Figtree-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B1AA985C05E47CF8C7D9DF0 /* Figtree-MediumItalic.ttf */; };
 		2DEB93B757064F2BB6FE19DD /* Figtree-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77F6BFF3648A4DC19D77D6CE /* Figtree-Regular.ttf */; };
 		804B5916F8F54CD3BD032B43 /* Figtree-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84A6F3F99ECD4B289EAF31E1 /* Figtree-SemiBoldItalic.ttf */; };
+		3B2FECA15F2B44BE8E416864 /* LeagueGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F349F598B071419CA8462451 /* LeagueGothic-Regular.ttf */; };
+		F43EB93A42314432BFD8BC87 /* LeagueGothic_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 406C7EAC333640D39A6730AB /* LeagueGothic_Condensed-Regular.ttf */; };
+		8D536ADC3AEA43A0A69BA5C6 /* LeagueGothic_SemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3594B527B7E47729E219262 /* LeagueGothic_SemiCondensed-Regular.ttf */; };
+		58567935A768400DA9EA6CB8 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6934E43FE55B4EF8836A7AC2 /* Quicksand-Bold.ttf */; };
+		75FEB3C420CA4E349AA225D0 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 769DBA4900A14074B1D8261F /* Quicksand-Light.ttf */; };
+		A9967FF475594B258165EE27 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C1BC159E4F6E9F4BC4C2 /* Quicksand-Medium.ttf */; };
+		17D29B5312034B4B83EEB110 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B5F8F47E2F84112A0145D1A /* Quicksand-Regular.ttf */; };
+		2CABE9E552084E25BEE2466D /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C2938F13F6E4C70A5E1E14B /* Quicksand-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +60,14 @@
 		4B1AA985C05E47CF8C7D9DF0 /* Figtree-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Figtree-MediumItalic.ttf"; path = "../assets/fonts/Figtree-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		77F6BFF3648A4DC19D77D6CE /* Figtree-Regular.ttf */ = {isa = PBXFileReference; name = "Figtree-Regular.ttf"; path = "../assets/fonts/Figtree-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		84A6F3F99ECD4B289EAF31E1 /* Figtree-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Figtree-SemiBoldItalic.ttf"; path = "../assets/fonts/Figtree-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F349F598B071419CA8462451 /* LeagueGothic-Regular.ttf */ = {isa = PBXFileReference; name = "LeagueGothic-Regular.ttf"; path = "../assets/fonts/LeagueGothic-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		406C7EAC333640D39A6730AB /* LeagueGothic_Condensed-Regular.ttf */ = {isa = PBXFileReference; name = "LeagueGothic_Condensed-Regular.ttf"; path = "../assets/fonts/LeagueGothic_Condensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A3594B527B7E47729E219262 /* LeagueGothic_SemiCondensed-Regular.ttf */ = {isa = PBXFileReference; name = "LeagueGothic_SemiCondensed-Regular.ttf"; path = "../assets/fonts/LeagueGothic_SemiCondensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6934E43FE55B4EF8836A7AC2 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; name = "Quicksand-Bold.ttf"; path = "../assets/fonts/Quicksand-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		769DBA4900A14074B1D8261F /* Quicksand-Light.ttf */ = {isa = PBXFileReference; name = "Quicksand-Light.ttf"; path = "../assets/fonts/Quicksand-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		42D1C1BC159E4F6E9F4BC4C2 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; name = "Quicksand-Medium.ttf"; path = "../assets/fonts/Quicksand-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6B5F8F47E2F84112A0145D1A /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; name = "Quicksand-Regular.ttf"; path = "../assets/fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C2938F13F6E4C70A5E1E14B /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; name = "Quicksand-SemiBold.ttf"; path = "../assets/fonts/Quicksand-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +159,14 @@
 				4B1AA985C05E47CF8C7D9DF0 /* Figtree-MediumItalic.ttf */,
 				77F6BFF3648A4DC19D77D6CE /* Figtree-Regular.ttf */,
 				84A6F3F99ECD4B289EAF31E1 /* Figtree-SemiBoldItalic.ttf */,
+				F349F598B071419CA8462451 /* LeagueGothic-Regular.ttf */,
+				406C7EAC333640D39A6730AB /* LeagueGothic_Condensed-Regular.ttf */,
+				A3594B527B7E47729E219262 /* LeagueGothic_SemiCondensed-Regular.ttf */,
+				6934E43FE55B4EF8836A7AC2 /* Quicksand-Bold.ttf */,
+				769DBA4900A14074B1D8261F /* Quicksand-Light.ttf */,
+				42D1C1BC159E4F6E9F4BC4C2 /* Quicksand-Medium.ttf */,
+				6B5F8F47E2F84112A0145D1A /* Quicksand-Regular.ttf */,
+				8C2938F13F6E4C70A5E1E14B /* Quicksand-SemiBold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -224,6 +248,14 @@
 				33CC011046324B659246A7F9 /* Figtree-MediumItalic.ttf in Resources */,
 				2DEB93B757064F2BB6FE19DD /* Figtree-Regular.ttf in Resources */,
 				804B5916F8F54CD3BD032B43 /* Figtree-SemiBoldItalic.ttf in Resources */,
+				3B2FECA15F2B44BE8E416864 /* LeagueGothic-Regular.ttf in Resources */,
+				F43EB93A42314432BFD8BC87 /* LeagueGothic_Condensed-Regular.ttf in Resources */,
+				8D536ADC3AEA43A0A69BA5C6 /* LeagueGothic_SemiCondensed-Regular.ttf in Resources */,
+				58567935A768400DA9EA6CB8 /* Quicksand-Bold.ttf in Resources */,
+				75FEB3C420CA4E349AA225D0 /* Quicksand-Light.ttf in Resources */,
+				A9967FF475594B258165EE27 /* Quicksand-Medium.ttf in Resources */,
+				17D29B5312034B4B83EEB110 /* Quicksand-Regular.ttf in Resources */,
+				2CABE9E552084E25BEE2466D /* Quicksand-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

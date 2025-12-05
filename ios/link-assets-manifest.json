@@ -56,6 +56,38 @@
     {
       "path": "assets/fonts/Figtree-SemiBoldItalic.ttf",
       "sha1": "3805bce21c6002b0defe2fa73fb89e7d0a02a84d"
+    },
+    {
+      "path": "assets/fonts/LeagueGothic-Regular.ttf",
+      "sha1": "32032992d599999cff091d76d1291236d5328140"
+    },
+    {
+      "path": "assets/fonts/LeagueGothic_Condensed-Regular.ttf",
+      "sha1": "dfecb50eb33e4ef19e3a90057de1aba04311b624"
+    },
+    {
+      "path": "assets/fonts/LeagueGothic_SemiCondensed-Regular.ttf",
+      "sha1": "c57b01e0ec43ce39a034f04abc8e4c659d3e7ed0"
+    },
+    {
+      "path": "assets/fonts/Quicksand-Bold.ttf",
+      "sha1": "111e880f4de54ccf0a7fd14f38999b9c066e46bb"
+    },
+    {
+      "path": "assets/fonts/Quicksand-Light.ttf",
+      "sha1": "4d3b72ff1544d92ca9a435d7e34d21eda322dd76"
+    },
+    {
+      "path": "assets/fonts/Quicksand-Medium.ttf",
+      "sha1": "04b8198132a4a092b10d0631500268d6a2a0f889"
+    },
+    {
+      "path": "assets/fonts/Quicksand-Regular.ttf",
+      "sha1": "61504eaec812663121918199aac7d960229bd306"
+    },
+    {
+      "path": "assets/fonts/Quicksand-SemiBold.ttf",
+      "sha1": "339f8d3e09ad271ff12727eef33a99f7a066eee3"
     }
   ]
 }

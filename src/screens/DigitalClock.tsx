@@ -1,27 +1,51 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 import { useEffect, useState } from "react";
-import { FigtreeFont } from "../shared/constants/figtree-font";
+import { FigtreeFont } from "../shared/constants/font";
+import SharedModal from "../shared/SharedModal";
+import ColorPaletteItem from "../components/ColorPaletteItem";
+import { ClockColor, DigitalClockColor } from "../shared/constants/color";
 
 export default function DigitalClock() {
 
-    const now = new Date();
-    const [hour, setHour] = useState(now.getHours().toString().padStart(2, '0'));
-    const [minute, setMinute] = useState(now.getMinutes().toString().padStart(2, '0'));
+    const [time, setTime] = useState(new Date());
+    const [showPalette, setShowPalette] = useState(false);
+    const [selectedColor, setSelectedColor] = useState(DigitalClockColor.pumpkinSpice);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const now = new Date();
-            setHour(now.getHours().toString().padStart(2, '0'));
-            setMinute(now.getMinutes().toString().padStart(2, '0'));
+            setTime(new Date());
         }, 1000);
         return () => clearInterval(interval);
 
     }, []);
 
+    const hour = time.getHours().toString().padStart(2, '0');
+    const minute = time.getMinutes().toString().padStart(2, '0');
 
     return (
-        <View style={styles.container}>
-            <Text numberOfLines={1} style={styles.largeText}>{hour + ':' + minute}</Text>
+        <View style={{ flex: 1 }}>
+            <Pressable style={{ flex: 1 }} onLongPress={() => { setShowPalette(true) }}>
+                <View style={styles.container}>
+                    <Text numberOfLines={1} style={[styles.largeText, {color:selectedColor}]}>{hour}</Text>
+                    <Text style={[styles.largeText, { transform: [{ translateY: '-5%' }], marginHorizontal: '-3%', color:selectedColor }]}>:</Text>
+                    <Text style={[styles.largeText, {color:selectedColor}]}>{minute}</Text>
+                </View>
+
+                <SharedModal visible={showPalette} title="Colors" onClose={() => setShowPalette(false)}>
+                    {Object.entries(DigitalClockColor).map((colorSet, index) => (
+                        <ColorPaletteItem
+                            key={index}
+                            isSelected={colorSet[1] === selectedColor}
+                            color1={colorSet[1]}
+                            onPress={() => {
+                                setSelectedColor(colorSet[1]);
+                                setShowPalette(false)
+                            }} />
+
+                    ))}
+                </SharedModal>
+
+            </Pressable>
         </View>
     );
 }
@@ -29,6 +53,7 @@ export default function DigitalClock() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -38,7 +63,7 @@ const styles = StyleSheet.create({
         color: '#eee',
         textAlign: 'center',
         fontFamily: FigtreeFont.bold,
-        letterSpacing: -10,
+        letterSpacing: -12,
 
     }
 });

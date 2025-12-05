@@ -1,4 +1,4 @@
-package com.standby
+package org.sunbhai.standby
 
 import android.content.Context
 import android.os.Build

@@ -77,9 +77,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.standby"
+    namespace "org.sunbhai.standby"
     defaultConfig {
-        applicationId "com.standby"
+        applicationId "org.sunbhai.standby"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

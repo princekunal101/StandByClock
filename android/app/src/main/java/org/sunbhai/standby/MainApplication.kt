@@ -1,4 +1,4 @@
-package com.standby
+package org.sunbhai.standby
 
 import android.app.Application
 import com.facebook.react.PackageList

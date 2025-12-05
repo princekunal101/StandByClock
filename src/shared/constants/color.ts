@@ -14,3 +14,52 @@ export const ColorPalette = {
   fusia: ['#ff00ffbc', '#ff00ffbb', '#ff00ffcc', '#ff00ffaa'],
   softPink: ['#ffb6c1bc', '#ffb6c1bb', '#ffb6c1cc', '#ffb6c1aa'],
 };
+
+export const ClockColor = {
+  // colors: 'colorcode'
+  lightGreen: '#7dde7d',
+  pearlAqua: '#80dcdb',
+  freshSky: '#6ab6dc',
+  amethystSmoke: '#c690cb',
+  pinkMist: '#f2a7c0',
+  pastelPink: '#ffc2c4',
+  honeyBronze: '#e6b863',
+  bananaCream: '#eae740',
+};
+
+export const DigitalClockColor = {
+  // colors: 'colorcode'
+  white: '#ffffff',
+  strawBerryRed: '#f94144',
+  pumpkinSpice: '#f3722c',
+  carrotOrange: '#f8961e',
+  tuscanSun: '#f9c74f',
+  willowGreen: '#90be6d',
+  seaweed: '#43aa8b',
+  blueSlate: '#577590',
+};
+
+export const FloatClockColor = {
+  // colors: [firstDigit, secondDigit, thirdDigit, forthDigit]
+  fusia: ['#b388ebcc', '#f7aef8cc', '#8093f1cc', '#fdc5f5cc'],
+  gradientBlue: ['#7400b8cc', '#5e60cecc', '#6930c3cc', '#5390d9cc'],
+  gradientSkyBlue: ['#4ea8decc', '#56cfe1cc', '#48bfe3cc', '#72efddcc'],
+  ocianBreze: ['#0077b6cc', '#90e0efcc', '#00b4d8cc', '#caf0f8cc'],
+  sunsetShades: ['#f7b267cc', '#f4845fcc', '#f79d65cc', '#f27059cc'],
+  coolWater: ['#38a3a5cc', '#80ed99cc', '#57cc99cc', '#70ed88cc'],
+};
+
+export const AnalogClockColor = {
+  // color: 'colorcode'
+  deepOrange: '#ff7f00',
+  lightGreen: '#32CD32',
+  greenYellow: '#ADFF2F',
+  yellow: '#FFFF00',
+  orange: '#FFA500',
+  tomato: '#FF6347',
+  mediumPurpul: '#7A4ED9',
+  coral: '#ED584E',
+  lightCyan: '#51CED9',
+  paleGold: '#F7DB58',
+  brightMintGreen: '#5AE881',
+};
