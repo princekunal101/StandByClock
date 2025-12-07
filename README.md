@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/princekunal101/StandByClock">
-    <img src="https://github.com/princekunal101/StandByClock/blob/main/images/icon.png" alt="StandByClock Logo" width="180" height="180">
+    <img style="border-radius: 20px " src="https://github.com/princekunal101/StandByClock/blob/main/images/icon.png" alt="StandByClock Logo" width="180" height="180">
   </a>
 </p>
 
@@ -31,11 +31,11 @@
 - [About The Project](#about-the-project)
   - [Screen Shots](#screen-shots)
 - [Getting Started](#getting-started)
-  - [Step 1: Start Metro](#step-1:-start-metro)
-  - [Step 2: Build and run your app](#step-2:-build-and-run-your-app)
+  - [Step 1: Start Metro](#step-1-start-metro)
+  - [Step 2: Build and run your app](#step-2-build-and-run-your-app)
     - [Android](#android)
     - [iOS](#ios)
-  - [Step 3: Modify your app](#step-3:-modify-your-app)
+  - [Step 3: Modify your app](#step-3-modify-your-app)
   - [Congratulations!](#congratulations-tada)
     - [Now what](#now-what)
 - [Troubleshooting](#troubleshooting)
