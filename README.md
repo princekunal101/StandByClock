@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/princekunal101/StandByClock">
-    <img src="https://github.com/princekunal101/StandByClock/blob/main/images/icon.png" alt="StandByClock Logo" width="180" height="180">
+    <img style="border-radius: 20px" src="https://github.com/princekunal101/StandByClock/blob/main/images/icon.png" alt="StandByClock Logo" width="180" height="180">
   </a>
 </p>
 
