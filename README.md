@@ -1,4 +1,60 @@
+<p align="center">
+  <a href="https://github.com/princekunal101/StandByClock">
+    <img src="https://github.com/princekunal101/StandByClock/blob/main/images/icon.png" alt="StandByClock Logo" width="180" height="180">
+  </a>
+</p>
+
+<h1 align="center"><b>Stand By Clock</b></h1>
+
+<p align="center">
+  <a href="https://github.com/princekunal101/StandByClock/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
+  </a>
+   <img src="https://img.shields.io/github/commit-activity/w/princekunal101/StandByClock" alt="GitHub commit activity">
+  <a href="https://github.com/princekunal101/StandByClock/issues">
+    <img src="https://img.shields.io/github/issues/princekunal101/StandByCLock.svg" alt="GitHub Issues">
+  </a>
+  <a href="https://github.com/princekunal101/StandByClock/pulls">
+    <img src="https://img.shields.io/github/issues-pr/princekunal101/StandByClock.svg" alt="GitHub Pull Requests">
+  </a>
+  <a href="https://github.com/princekunal101/StandByClock/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/princekunal101/StandByClock.svg" alt="Contributors">
+  </a>
+</p>
+
+<!-- <p align="center">
+  The Learning Platform for the Future, you can click to view these pages.
+</p> -->
+
+## Table of Contents
+
+- [About The Project](#about-the-project)
+  - [Screen Shots](#screen-shots)
+- [Getting Started](#getting-started)
+  - [Step 1: Start Metro](#step-1:-start-metro)
+  - [Step 2: Build and run your app](#step-2:-build-and-run-your-app)
+    - [Android](#android)
+    - [iOS](#ios)
+  - [Step 3: Modify your app](#step-3:-modify-your-app)
+  - [Congratulations!](#congratulations-tada)
+    - [Now what](#now-what)
+- [Troubleshooting](#troubleshooting)
+- [Learn More](#learn-more)
+- [Contributing](#contributing)
+- [License](#license)
+
+# About The Project
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+
+## Screen Shots
+
+<p style="dispaly="flex">
+<img width='400' src="./images/analog-theme.jpeg" alt="Analog Clock" />
+<img width='400' src="./images/floating-digital-theme.jpeg" alt="Floating Clock" />
+<img width='400' src="./images/solar-background-digital-theme.jpeg" alt="Solar bg Clock" />
+<img width='400' src="./images/digital-theme.jpeg" alt="Digital Clock" />
+</p>
 
 # Getting Started
 
@@ -95,3 +151,11 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+# LICENSE
+
+This project is licensed under the MIT License.
+
+You are free to use, modify, and distribute this software for any purpose, including commercial applications, provided that the original copyright notice and this license are included in all copies or substantial portions of the software.
+
+See the [LICENSE](LICENSE) file for the full text.
