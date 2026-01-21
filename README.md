@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/princekunal101/StandByClock">
-    <img style="border-radius: 20px " src="https://github.com/princekunal101/StandByClock/blob/main/images/icon.png" alt="StandByClock Logo" width="180" height="180">
+    <img src="https://github.com/princekunal101/StandByClock/blob/main/assets/images/icon.png" alt="StandByClock Logo" width="180" height="180">
   </a>
 </p>
 
@@ -50,10 +50,10 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 ## Screen Shots
 
 <p style="dispaly="flex">
-<img width='400' src="./images/analog-theme.jpeg" alt="Analog Clock" />
-<img width='400' src="./images/floating-digital-theme.jpeg" alt="Floating Clock" />
-<img width='400' src="./images/solar-background-digital-theme.jpeg" alt="Solar bg Clock" />
-<img width='400' src="./images/digital-theme.jpeg" alt="Digital Clock" />
+<img width='400' src="./assets/images/analog-theme.jpeg" alt="Analog Clock" />
+<img width='400' src="./assets/images/floating-digital-theme.jpeg" alt="Floating Clock" />
+<img width='400' src="./assets/images/solar-background-digital-theme.jpeg" alt="Solar bg Clock" />
+<img width='400' src="./assets/images/digital-theme.jpeg" alt="Digital Clock" />
 </p>
 
 # Getting Started
