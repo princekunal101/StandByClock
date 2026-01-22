@@ -1,6 +1,6 @@
-apply plugin: "com.android.application"
-apply plugin: "org.jetbrains.kotlin.android"
-apply plugin: "com.facebook.react"
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'com.facebook.react'
 
 /**
  * This is the configuration block to customize your React Native Android app.
@@ -77,13 +77,13 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "org.sunbhai.standby"
+    namespace 'org.sunbhai.standby'
     defaultConfig {
-        applicationId "org.sunbhai.standby"
+        applicationId 'org.sunbhai.standby'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 5
+        versionName '1.0.2'
     }
     signingConfigs {
         debug {
@@ -102,17 +102,38 @@ android {
             // see https://reactnative.dev/docs/signed-apk-android.
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
-            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions 'store'
+    productFlavors {
+        play {
+            dimension 'store'
+            buildConfigField "boolean", "ENABLE_PLAY_INTEGRITY", "true"
+        }
+        amazon {
+            dimension 'store'
+            buildConfigField "boolean", "ENABLE_PLAY_INTEGRITY", "false"
+        }
+        samsung {
+            dimension 'store'
+            buildConfigField "boolean", "ENABLE_PLAY_INTEGRITY", "false"
+        }
+        indus {
+            dimension 'store'
+            buildConfigField "boolean", "ENABLE_PLAY_INTEGRITY", "false"
         }
     }
 }
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
-    implementation("com.facebook.react:react-android")
+    implementation('com.facebook.react:react-android')
+
+    playImplementation 'com.google.android.play:integrity:1.3.0'
 
     if (hermesEnabled.toBoolean()) {
-        implementation("com.facebook.react:hermes-android")
+        implementation('com.facebook.react:hermes-android')
     } else {
         implementation jscFlavor
     }
