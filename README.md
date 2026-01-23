@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/princekunal101/StandByClock">
-    <img src="https://github.com/princekunal101/StandByClock/blob/main/assets/images/icon.png" alt="StandByClock Logo" width="180" height="180">
+    <img style="border-radius:36px" src="https://github.com/princekunal101/StandByClock/blob/main/assets/images/icon.png" alt="StandByClock Logo" width="180" height="180">
   </a>
 </p>
 
@@ -25,6 +25,22 @@
 <!-- <p align="center">
   The Learning Platform for the Future, you can click to view these pages.
 </p> -->
+
+---
+
+<p align="center">
+  <!-- <a href="https://play.google.com/store/apps/details?id=com.your.app">
+    <img alt="Google Play" src="https://img.shields.io/badge/Google%20Play-Download-34A853?logo=googleplay&logoColor=white" />
+  </a> -->
+  <a href="https://www.amazon.in/dp/B0GJ6PZ9GC/ref=sr_1_2?crid=1AX0ARVY3OLUZ&dib=eyJ2IjoiMSJ9.WFE7nHD1njxa90FadxzpHa2_Rr1MB4zCpzP0W9a8d-0E7g_njzdTCTepC0hJI-7zMIrNYnmLQ7qcXQ-nxnL0tq3Pew1T4laTHxuvQskEqvk.qp5YlZmb1UxiMb4LxfDF9tQbpV8urOeYTKvdnqCey5U&dib_tag=se&keywords=StandBy&nsdOptOutParam=true&qid=1769165279&s=mobile-apps&sprefix=standby%2Cmobile-apps%2C403&sr=1-2">
+    <img alt="Amazon Appstore" src="https://img.shields.io/badge/Amazon%20Appstore-Download-FF9900?logo=amazon&logoColor=white" />
+  </a>
+  <a href="https://indusapp.store/5yoaszcl">
+    <img alt="Indus Appstore" src="https://img.shields.io/badge/Indus%20Appstore-Download-6C63FF" />
+  </a>
+</p>
+
+---
 
 ## Table of Contents
 
